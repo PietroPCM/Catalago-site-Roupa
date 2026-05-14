@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo online da Aurora Boutique em Cascavel - PR. Consulte peças femininas pelo WhatsApp.">
+  <title>Aurora Boutique | Catálogo de Moda Feminina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="topo">
+    <a class="brand" href="#topo" aria-label="Aurora Boutique">
+      <span>Aurora</span>
+      <small>Boutique</small>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#colecao">Coleção</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Curadoria</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-small btn-dark js-whatsapp-general" href="#" target="_blank" rel="noopener">Consultar peças</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Menu mobile">
+      <a href="#colecao">Coleção</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Curadoria</a>
+      <a href="#localizacao">Localização</a>
+      <a class="mobile-cta js-whatsapp-general" href="#" target="_blank" rel="noopener">Consultar pelo WhatsApp</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="colecao">
+      <div class="hero-copy">
+        <p class="eyebrow hero-item">Coleção rotina elegante | Cascavel - PR</p>
+        <h1 class="hero-item">Moda feminina elegante para sua rotina, trabalho e ocasiões especiais.</h1>
+        <p class="hero-text hero-item">Escolha suas peças favoritas e fale direto com a loja para confirmar tamanho, cor, entrega ou retirada em Cascavel.</p>
+        <div class="hero-buttons hero-item">
+          <a class="btn btn-dark magnetic js-whatsapp-general" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <a class="btn btn-outline magnetic" href="#catalogo">Ver coleção</a>
+        </div>
+      </div>
+
+      <div class="hero-visual hero-item" aria-label="Campanha Aurora Boutique">
+        <div class="season-tag">
+          <span>Nova seleção</span>
+          <strong>tons neutros, linho e alfaiataria leve</strong>
+        </div>
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1100&q=85" alt="Mulher usando look elegante em editorial de moda">
+        <div class="collection-note">
+          <span>08 peças</span>
+          <small>para trabalho, rotina e ocasiões especiais</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Benefícios da Aurora Boutique">
+      <div class="trust-item reveal">
+        <span>Retirada</span>
+        <strong>Retirada em Cascavel</strong>
+      </div>
+      <div class="trust-item reveal">
+        <span>Atendimento</span>
+        <strong>Direto pelo WhatsApp</strong>
+      </div>
+      <div class="trust-item reveal">
+        <span>Curadoria</span>
+        <strong>Peças selecionadas para a rotina</strong>
+      </div>
+      <div class="trust-item reveal">
+        <span>Consulta</span>
+        <strong>Tamanho, cor e disponibilidade</strong>
+      </div>
+    </section>
+
+    <section class="catalog-section section-pad" id="catalogo">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Catálogo consultivo</p>
+        <h2>Escolha pela peça, consulte pelo WhatsApp.</h2>
+        <p>As fotos valorizam a composição. A confirmação de tamanho, cor e retirada acontece direto com a loja.</p>
+      </div>
+
+      <div class="catalog-tools reveal">
+        <div class="category-track" id="categoryFilters" aria-label="Categorias do catálogo"></div>
+        <label class="search-box">
+          <span>Buscar peça</span>
+          <input id="searchInput" type="search" placeholder="Vestido, blazer, bolsa..." autocomplete="off">
+        </label>
+      </div>
+
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <p>Nenhuma peça encontrada com esse filtro.</p>
+        <button class="btn btn-outline" type="button" id="clearFilters">Limpar busca</button>
+      </div>
+    </section>
+
+    <section class="feature-piece section-pad">
+      <div class="feature-image reveal">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=85" alt="Vestido midi areia em composição editorial">
+      </div>
+      <div class="feature-copy reveal">
+        <p class="eyebrow">Peça destaque</p>
+        <h2>Vestido Midi Areia</h2>
+        <p class="feature-price">R$ 189,90</p>
+        <p>Caimento leve, comprimento midi e tom areia fácil de combinar com rasteira, salto baixo ou blazer. Uma peça para atravessar compromissos do dia sem perder presença.</p>
+        <a class="btn btn-dark magnetic js-feature-whatsapp" href="#" target="_blank" rel="noopener">Consultar Vestido Midi Areia</a>
+      </div>
+    </section>
+
+    <section class="about-section section-pad" id="sobre">
+      <div class="about-copy reveal">
+        <p class="eyebrow">Curadoria Aurora</p>
+        <h2>Uma seleção pensada para vestir a semana com leveza.</h2>
+        <p>A Aurora reúne vestidos, alfaiataria leve, blusas de base e acessórios que resolvem a rotina sem parecerem improviso. A loja atende pelo WhatsApp para confirmar medidas, disponibilidade e melhor forma de retirada ou entrega em Cascavel.</p>
+      </div>
+      <div class="about-list reveal">
+        <div>
+          <span>01</span>
+          <p>Peças versáteis para trabalho, almoço, eventos pequenos e encontros de fim de tarde.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <p>Atendimento direto para consultar tamanho, tecido, caimento e combinações possíveis.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <p>Catálogo organizado para enviar para clientes sem depender apenas do feed do Instagram.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps-section section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Como comprar</p>
+        <h2>Consulta simples, sem carrinho.</h2>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card reveal">
+          <span>1</span>
+          <h3>Escolha sua peça favorita</h3>
+          <p>Navegue por categoria, compare detalhes e toque no botão da peça que chamou sua atenção.</p>
+        </article>
+        <article class="step-card reveal">
+          <span>2</span>
+          <h3>Chame a loja no WhatsApp</h3>
+          <p>A mensagem já vai com o nome da peça para agilizar o atendimento.</p>
+        </article>
+        <article class="step-card reveal">
+          <span>3</span>
+          <h3>Confirme tamanho e retirada</h3>
+          <p>Combine tamanho, pagamento e retirada na loja ou entrega sob consulta em Cascavel.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="commerce-info section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Informações da compra</p>
+        <h2>Atendimento claro antes de separar sua peça.</h2>
+        <p>Antes de finalizar, a equipe confirma disponibilidade, pagamento e a melhor forma de entrega ou retirada.</p>
+      </div>
+      <div class="info-grid">
+        <article class="info-card reveal">
+          <span>Pagamento</span>
+          <p>Pix, cartão de débito e crédito.</p>
+        </article>
+        <article class="info-card reveal">
+          <span>Retirada</span>
+          <p>Retirada na loja na Avenida Brasil, Centro.</p>
+        </article>
+        <article class="info-card reveal">
+          <span>Entrega</span>
+          <p>Entrega sob consulta em Cascavel.</p>
+        </article>
+        <article class="info-card reveal">
+          <span>Trocas</span>
+          <p>Trocas conforme política da loja.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials-section section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Clientes Aurora</p>
+        <h2>Compra com conversa, escolha e segurança.</h2>
+        <p>O atendimento pelo WhatsApp ajuda a tirar dúvidas antes de separar a peça.</p>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card reveal">
+          <p>"Fui atendida pelo WhatsApp, tirei dúvidas sobre o tamanho e retirei a peça no mesmo dia. Muito prático."</p>
+          <span>Mariana S.</span>
+        </article>
+        <article class="testimonial-card reveal">
+          <p>"Gostei porque as peças chegaram bem passadas na loja e o tecido era exatamente como tinham explicado."</p>
+          <span>Camila R.</span>
+        </article>
+        <article class="testimonial-card reveal">
+          <p>"Mandei a peça que vi no catálogo, confirmei a cor disponível e combinei a entrega sem precisar procurar no Instagram."</p>
+          <span>Juliana P.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="location-section section-pad" id="localizacao">
+      <div class="location-panel reveal">
+        <p class="eyebrow">Cascavel - PR</p>
+        <h2>Visite ou consulte atendimento.</h2>
+        <address>Avenida Brasil, 1550 - Centro, Cascavel - PR</address>
+        <p>Segunda a sábado, das 9h às 18h30</p>
+        <div class="location-actions">
+          <a class="btn btn-dark magnetic" href="https://www.google.com/maps/search/?api=1&query=Avenida%20Brasil%201550%20Centro%20Cascavel%20PR" target="_blank" rel="noopener">Abrir rota</a>
+          <a class="btn btn-outline magnetic js-whatsapp-general" href="#" target="_blank" rel="noopener">Chamar a loja</a>
+        </div>
+      </div>
+      <div class="location-image reveal">
+        <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1100&q=85" alt="Interior de boutique com roupas em araras">
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="reveal">
+        <p class="eyebrow">Atendimento direto</p>
+        <h2>Gostou de alguma peça? Consulte disponibilidade.</h2>
+        <a class="btn btn-light magnetic js-whatsapp-general" href="#" target="_blank" rel="noopener">Consultar pelo WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <a class="float-whatsapp js-whatsapp-general" href="#" target="_blank" rel="noopener" aria-label="Consultar peças pelo WhatsApp">WhatsApp</a>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Aurora Boutique</strong>
+      <p>Catálogo feminino em Cascavel - PR</p>
+    </div>
+    <div>
+      <p><a href="https://www.instagram.com/auroraboutique" target="_blank" rel="noopener">@auroraboutique</a></p>
+      <p>Avenida Brasil, 1550 - Centro</p>
+    </div>
+    <div>
+      <p><a class="js-whatsapp-general" href="#" target="_blank" rel="noopener">WhatsApp: (45) 99999-9999</a></p>
+      <p>Segunda a sábado, 9h às 18h30</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
